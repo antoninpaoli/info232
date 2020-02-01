@@ -19,7 +19,6 @@ def answer_01(data):
 
     """
     # TODO : standardize data
-    scaled_data = data
     scaled_data = (data - data.mean()) / data.std()
     scaled_data.iloc[:, 2] = data.iloc[:, 2]
     return scaled_data
